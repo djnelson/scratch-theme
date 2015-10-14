@@ -1,0 +1,475 @@
+/*
+Theme Name: Scratch Theme
+Theme URI: http://www.linkedwebdesign.com
+Author: Don Nelson
+Author URI: http://www.linkedwebdesign.com
+Description: Demo theme for testing purposes
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootstrapbasedtravelagencysite
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #0CF;
+  color: #fff;
+  min-height: 70px;
+}
+
+footer {
+  background-color: #f80;
+}
+
+footer div {
+  margin: 0;
+  padding: 0;
+}
+
+footer div p {
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #000;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: left;
+  float: left;
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  background-color: #000;
+  text-decoration: none;
+  transition: .3s background-color, .2s color;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #ffcc00;
+}
+
+nav ul li a.current {
+  color: #ebbc02;
+  cursor: default;
+}
+
+nav ul li a.current:hover {
+  background-color: #000;
+}
+
+a {
+  color: #b34100;
+  transition: .2s color;
+}
+
+a:hover {
+  color: #f80;
+}
+
+i {
+  color: #fff;
+  padding: 12px 4px 4px 4px;
+}
+
+i:hover {
+  color: #333;
+  transition: .5s color;
+}
+
+label {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+form p {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+form a:hover {
+  color: #000;
+}
+
+input:focus {
+  background: rgba(255, 204, 76, 1);
+}
+
+input[type=submit] {
+  border: 0;
+  border-radius: 100px;
+  font-size: 1em;
+  margin-top: 28px;
+  padding: 8px 40px;
+  transition: .2s color, .2s background-color;
+}
+
+input[type=submit]:hover {
+  background-color: #B34100;
+  color: #fff;
+}
+
+/************************************/
+/* 12-COLUMN RESPONSIVE GRID LAYOUT */
+/************************************/
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+  /* background-color: #ccc; */
+  text-align: center;
+  min-height: 60px;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+
+.hideElement {
+  display: block;
+}
+
+#companyName {
+  font-family: "Myriad Pro Regular", Helvetica, sans-serif;
+  font-style: italic;
+  margin: 6px 0 0 0;
+}
+
+#companyName h1 a, #companyName h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#companyContact {
+  background-color: #008FB3;
+  border-radius: 60px;
+  margin: 0;
+  padding: 11px 0;
+  line-height: 1.2em;
+}
+
+#mainNav {
+  margin: 0;
+  padding: 0;
+}
+
+#menuToggle {
+  display: none;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 8px 0;
+  height: 40px;
+  background: #000 url("../_images/vertical-arrow.png") no-repeat;
+  background-position: center 28px;
+  background-size: 32px;
+}
+
+#hero {
+  background-image: url("../_images/beach.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  height: auto;
+  margin: -20px 0 0 0;
+  padding-bottom: 80px;
+}
+
+#hero h2 {
+  padding-top: 40px;
+}
+
+#hero img {
+  width: 40%;
+  padding: 20px 0 70px 0;
+}
+
+#hero a {
+  font-family: 'Lobster', cursive;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: #fff solid 4px;
+  color:#fff;
+  font-size: 1.6em;
+  padding: 20px 30px;
+  text-decoration: none;
+  width: 50%;
+  transition: .3s background-color, .3s color, .3s border-color, .3s border-radius, .3s box-shadow;
+}
+
+#hero a:hover {
+  background-color: #FF8800;
+  background-color: rgba(255, 136, 0, 1);
+  color: #333;
+  border-color: #333;
+  border-radius: 40px;
+  box-shadow: #000 2px 2px 4px;
+  transition: .3s background-color, .3s color, .3s border-color, .3s border-radius, .3s box-shadow;
+}
+
+#signIn {
+  background-color: #F80;
+  margin-top: -1px;
+  padding: 24px 0;
+}
+
+#promo1, #promo2, #promo3 {
+  padding-bottom: 20px;
+}
+
+#promo1 p, #promo2 p, #promo3 p {
+  padding: 20px 30px;
+  line-height: 1.2em;
+}
+
+#promo1 h3, #promo2 h3, #promo3 h3 {
+  background-color: #b34100;
+  border-bottom: #333 solid 2px;
+  border-radius: 40px 40px 0 0;
+  color: #fff;
+  margin: 10px 20px;
+  padding: 14px;
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+@media only screen and (max-width: 825px) {
+  
+  header {
+    height: 60px;
+  }
+
+  nav ul li a {
+    font-size: 0.7em;
+  }
+
+  address {
+    padding-top: 12px;
+  }
+
+  label, form p {
+    font-size: 0.8em;
+  }
+
+  #companyName {
+    font-size: 0.6em;
+    line-height: 38px;
+  }
+
+  #companyContact {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  #hero {
+    background-image: url("../_images/beach2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    height: auto;
+    margin: -20px 0 0 0;
+    padding-bottom: 80px;
+  }
+
+  #hero h2 {
+    padding-top: 30px;
+    font-size: 1.2em;
+  }
+
+  #hero a {
+    font-size: 1.2em;
+    padding: 14px;
+    width: 50%;
+  }
+
+  #promo1 h3, #promo2 h3, #promo3 h3 {
+    font-size: 1em;
+  }
+
+  #promo1 p, #promo2 p, #promo3 p {
+    font-size: 0.8em;
+  }
+
+}
+
+/*  GO FULL WIDTH BELOW 504 PIXELS */
+@media only screen and (max-width: 506px) {
+	
+  nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  label {
+    display: block;
+    padding-left: 0;
+  }
+
+  footer div p {
+    font-size: 0.6em;
+  }
+
+  .col {  margin: 1% 0 1% 0%; }
+    
+  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, 
+  .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	  width: 100%; 
+	}
+
+  #companyName {
+    font-size: 0.5em;
+    line-height: 28px;
+  }
+
+  #companyContact {
+    margin-top: -6px;
+    border-radius: 0;
+  }
+
+  .hideElement {
+    display: none;
+  }
+
+  #hero {
+    background-image: url("../_images/beach2.jpg");
+    margin: 0;
+    padding-bottom: 80px;
+  }
+
+  #hero h2 {
+    padding-top: 16px;
+    font-size: 0.9em;
+  }
+
+  #hero img {
+    width: 40%;
+    padding: 4px 0 40px 0;
+  }
+
+  #menuToggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  #menuToggle p {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #promo1 h3, #promo2 h3, #promo3 h3 {
+    border-radius: 40px;
+  }
+
+  #promo1 p, #promo2 p, #promo3 p {
+    line-height: 1.5em;
+  }
+
+@media only screen and (max-width: 356px) {
+
+  #hero {
+    background-image: url("../_images/beach3.jpg");
+    padding-bottom: 4 0px;
+  }  
+
+}
