@@ -1,19 +1,24 @@
 <?php
 
-/*-----------------------------------------------------------------------------------*/
-/* Enqueue scripts and styles *
-/*-----------------------------------------------------------------------------------*/
+/*
+	Enqueue scripts and styles
+*/
 
-function theme_name_scripts() {
+function scratch_theme_scripts() {
 	wp_enqueue_style( 'main-styles', get_stylesheet_uri() );
-	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/js/site-behaviors.js', array(), '1.0.0', true );
+	wp_enqueue_script(
+		'custom-script',
+		get_stylesheet_directory_uri() . '/_js/site-behaviors.js',
+		array( 'jquery' ),
+		true
+	);
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'scratch_theme_scripts' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Add Logo Upload Capability via WP Theme Customizer *
-/*-----------------------------------------------------------------------------------*/
+/*
+	Add logo upload capability via WP Theme Customizer
+*/
 
 function themeslug_theme_customizer( $wp_customize ) {
 
@@ -30,17 +35,17 @@ function themeslug_theme_customizer( $wp_customize ) {
 		    'label'    => __( 'Logo', 'themeslug' ),
 		    'section'  => 'themeslug_logo_section',
 		    'settings' => 'themeslug_logo',
-			) 
-		) 
+			)
+		)
 	);
 
 }
 
 add_action( 'customize_register', 'themeslug_theme_customizer' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Add WP menu support *
-/*-----------------------------------------------------------------------------------*/
+/*
+	Add WP menu support
+*/
 
 function register_my_menu() {
 
@@ -50,9 +55,9 @@ function register_my_menu() {
 
 add_action( 'init', 'register_my_menu' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Add WP sidebar and widgetized area support *
-/*-----------------------------------------------------------------------------------*/
+/*
+	Add WP sidebar and widgetized area support
+*/
 
 function promo_widgets_init() {
 
@@ -90,9 +95,9 @@ function promo_widgets_init() {
 
 add_action( 'widgets_init', 'promo_widgets_init' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Remove 'Howdy' from the admin-bar */
-/*-----------------------------------------------------------------------------------*/
+/*
+	Remove 'Howdy' from the admin-bar
+*/
 
 add_filter('admin_bar_menu','change_howdy_text_toolbar');
 function change_howdy_text_toolbar($wp_admin_bar)
@@ -102,9 +107,9 @@ function change_howdy_text_toolbar($wp_admin_bar)
 	$wp_admin_bar->add_node(array("id"=>"my-account","title"=>$rpctitle));
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Remove WordPress logo from the admin-bar */
-/*-----------------------------------------------------------------------------------*/
+/*
+	Remove WordPress logo from the admin-bar
+*/
 
 add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
 
