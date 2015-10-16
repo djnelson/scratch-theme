@@ -62,33 +62,33 @@ add_action( 'init', 'register_my_menu' );
 function promo_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Left Column Area',
+		'name'          => 'Left Home Page Widget',
 		'id'            => 'promo1',
 		'before_widget' => '<div id="promo1" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>',
-		'description'	=> 'Area 1 of 3',
+		'description'	=> 'The first of three columns on the home page above the footer.',
 	) );
 
 	register_sidebar( array(
-		'name'          => 'Center Column Area',
+		'name'          => 'Center Home Page Widget',
 		'id'            => 'promo2',
 		'before_widget' => '<div id="promo2" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>',
-		'description'	=> 'Area 2 of 3',
+		'description'	=> 'The second of three columns on the home page above the footer.',
 	) );
 
 	register_sidebar( array(
-		'name'          => 'Right Column Area',
+		'name'          => 'Right Home Page Widget',
 		'id'            => 'promo3',
 		'before_widget' => '<div id="promo3" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>',
-		'description'	=> 'Area 3 of 3',
+		'description'	=> 'The third of three columns on the home page above the footer.',
 	) );
 
 }
