@@ -264,13 +264,13 @@ input[type=submit]:hover {
   margin: 0;
   padding: 0 0 8px 0;
   height: 40px;
-  background: #000 url("../_images/vertical-arrow.png") no-repeat;
+  background: #000 url("_images/vertical-arrow.png") no-repeat;
   background-position: center 28px;
   background-size: 32px;
 }
 
 #hero {
-  background-image: url("../_images/beach.jpg");
+  background-image: url("_images/beach.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: #fff;
@@ -448,7 +448,7 @@ a img.aligncenter {
 /*****************/
 
 @media only screen and (max-width: 825px) {
-  
+
   header {
     height: 60px;
   }
@@ -477,7 +477,7 @@ a img.aligncenter {
   }
 
   #hero {
-    background-image: url("../_images/beach2.jpg");
+    background-image: url("_images/beach2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     color: #fff;
@@ -509,7 +509,7 @@ a img.aligncenter {
 
 /*  GO FULL WIDTH BELOW 504 PIXELS */
 @media only screen and (max-width: 506px) {
-	
+
   nav ul li {
     text-align: center;
     width: 100%;
@@ -529,10 +529,10 @@ a img.aligncenter {
   }
 
   .col {  margin: 1% 0 1% 0%; }
-    
-  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, 
+
+  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12,
   .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-	  width: 100%; 
+	  width: 100%;
 	}
 
   #companyName {
@@ -550,7 +550,7 @@ a img.aligncenter {
   }
 
   #hero {
-    background-image: url("../_images/beach2.jpg");
+    background-image: url("_images/beach2.jpg");
     margin: 0;
     padding-bottom: 80px;
   }
@@ -586,8 +586,8 @@ a img.aligncenter {
 @media only screen and (max-width: 356px) {
 
   #hero {
-    background-image: url("../_images/beach3.jpg");
+    background-image: url("_images/beach3.jpg");
     padding-bottom: 4 0px;
-  }  
+  }
 
 }
