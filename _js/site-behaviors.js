@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});
 
 	// Simple animation of the stars over the hero image on the homepage
-	$("#stars").hide().fadeIn(1000, "swing");
+	//$("#stars").hide().fadeIn(1000, "swing");
 
 	// Hide sign-in form at page load
 	$("#signIn").hide();
