@@ -26,11 +26,11 @@
 				</div>
 			<?php else : ?>
 				<h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-        		<h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
-        	<?php endif; ?>
+        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+      <?php endif; ?>
 		</div>
 		<div id="companyContact" class="col span_4_of_12">
-			<address>1265 Lombardi Ave.<br>Green Bay, WI 54304<br>920-321-4567</address>
+			<?php dynamic_sidebar( 'right_header' ); ?>
 		</div>
 	</header>
 

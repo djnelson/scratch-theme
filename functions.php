@@ -59,7 +59,7 @@ add_action( 'init', 'register_my_menu' );
 	Add WP sidebar and widgetized area support
 */
 
-function promo_widgets_init() {
+function scratch_theme_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => 'Left Home Page Widget',
@@ -91,9 +91,19 @@ function promo_widgets_init() {
 		'description'	=> 'The third of three columns on the home page above the footer.',
 	) );
 
+	register_sidebar( array(
+		'name'          => 'Right Header Widget',
+		'id'            => 'right_header',
+		'before_widget' => '<address>',
+		'after_widget'  => '</address>',
+		'before_title'  => '',
+		'after_title'   => '',
+		'description'	=> 'The right side area of the header used for displaying contact information.',
+	) );
+
 }
 
-add_action( 'widgets_init', 'promo_widgets_init' );
+add_action( 'widgets_init', 'scratch_theme_widgets_init' );
 
 /*
 	Remove 'Howdy' from the admin-bar
