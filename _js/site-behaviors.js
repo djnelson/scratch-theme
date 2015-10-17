@@ -1,13 +1,13 @@
 // Simple jQuery functions to control some site behaviors
 
 $(document).ready(function() {
-	
+
 	$("#menuToggle").click(function() {
 		$("#mainNavLinks").toggleClass("hideElement");
 	});
 
-	// Simple animation of the stars over the hero image on the homepage
-	//$("#stars").hide().fadeIn(1000, "swing");
+	Simple animation of the stars over the hero image on the homepage
+	$("#stars").hide().fadeIn(1000, "swing");
 
 	// Hide sign-in form at page load
 	$("#signIn").hide();
