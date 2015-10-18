@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Book your next dream vacation with us." />
 	<title>Welcome To <?php echo $blog_title = get_bloginfo(); ?></title>
 	<link rel="stylesheet" href="styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
