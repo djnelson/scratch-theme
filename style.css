@@ -234,6 +234,12 @@ input[type=submit]:hover {
   text-align: left;
 }
 
+.blogPost {
+  text-align: left;
+  margin: 0 24px;
+  padding-left: 24px;
+}
+
 #companyName {
   font-family: "Myriad Pro Regular", Helvetica, sans-serif;
   font-style: italic;
