@@ -502,8 +502,8 @@ a img.aligncenter {
 
 }
 
-/*  GO FULL WIDTH BELOW 504 PIXELS */
-@media only screen and (max-width: 506px) {
+/*  GO FULL WIDTH BELOW 512 PIXELS */
+@media only screen and (max-width: 512px) {
 
   nav ul li {
     text-align: center;
