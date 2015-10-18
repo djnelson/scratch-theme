@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Enqueue scripts and styles
+ENQUEUE SCRIPTS AND STYLES
 */
 
 function scratch_theme_scripts() {
@@ -17,11 +17,10 @@ function scratch_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'scratch_theme_scripts' );
 
 /*
-	Add logo upload capability via WP Theme Customizer
+ADD LOGO UPLOAD CAPABILITY VIA WP THEME CUSTOMIZER
 */
 
 function themeslug_theme_customizer( $wp_customize ) {
-
     $wp_customize->add_section( 'themeslug_logo_section' , array(
 	    'title'       => __( 'Logo', 'themeslug' ),
 	    'priority'    => 30,
@@ -44,25 +43,23 @@ function themeslug_theme_customizer( $wp_customize ) {
 add_action( 'customize_register', 'themeslug_theme_customizer' );
 
 /*
-	Add WP menu support
+ADD WP MENU SUPPORT
 */
 
 function register_my_menu() {
-
   register_nav_menu('header-menu',__( 'Header Menu' ));
-
 }
 
 add_action( 'init', 'register_my_menu' );
 
 /*
-	Add WP sidebar and widgetized area support
+ADD WP SIDEBAR AND WIDGETIZED AREA SUPPORT
 */
 
 function scratch_theme_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Left Home Page Widget',
+		'name'          => 'Left Home Page Area',
 		'id'            => 'promo1',
 		'before_widget' => '<div id="promo1" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
@@ -71,8 +68,8 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The first of three columns on the home page above the footer.',
 	) );
 
-	register_sidebar( array(
-		'name'          => 'Center Home Page Widget',
+        register_sidebar( array(
+		'name'          => 'Center Home Page Area',
 		'id'            => 'promo2',
 		'before_widget' => '<div id="promo2" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
@@ -81,8 +78,8 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The second of three columns on the home page above the footer.',
 	) );
 
-	register_sidebar( array(
-		'name'          => 'Right Home Page Widget',
+        register_sidebar( array(
+		'name'          => 'Right Home Page Area',
 		'id'            => 'promo3',
 		'before_widget' => '<div id="promo3" class="col span_4_of_12">',
 		'after_widget'  => '</div>',
@@ -91,8 +88,8 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The third of three columns on the home page above the footer.',
 	) );
 
-	register_sidebar( array(
-		'name'          => 'Right Header Widget',
+    	register_sidebar( array(
+		'name'          => 'Right Header Area',
 		'id'            => 'right_header',
 		'before_widget' => '<address>',
 		'after_widget'  => '</address>',
@@ -106,7 +103,7 @@ function scratch_theme_widgets_init() {
 add_action( 'widgets_init', 'scratch_theme_widgets_init' );
 
 /*
-	Remove 'Howdy' from the admin-bar
+REMOVE 'HOWDY' FROM THE ADMIN-BAR
 */
 
 add_filter('admin_bar_menu','change_howdy_text_toolbar');
@@ -118,7 +115,7 @@ function change_howdy_text_toolbar($wp_admin_bar)
 }
 
 /*
-	Remove WordPress logo from the admin-bar
+REMOVE WP LOGO FROM THE ADMIN-BAR
 */
 
 add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
