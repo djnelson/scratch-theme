@@ -225,13 +225,22 @@ input[type=submit]:hover {
   display: block;
 }
 
+.sidebar, .mainContent {
+  text-align: left;
+}
+
+.sidebar p {
+  padding: 0 24px 0 0;
+}
+
+.mainContent p {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .pageTitle {
   text-align: left;
   padding: 0 20px;
-}
-
-.pageContent {
-  text-align: left;
 }
 
 .blogPost {

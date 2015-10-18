@@ -68,7 +68,7 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The first of three columns on the home page above the footer.',
 	) );
 
-        register_sidebar( array(
+  register_sidebar( array(
 		'name'          => 'Center Home Page Area',
 		'id'            => 'promo2',
 		'before_widget' => '<div id="promo2" class="col span_4_of_12">',
@@ -78,7 +78,7 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The second of three columns on the home page above the footer.',
 	) );
 
-        register_sidebar( array(
+  register_sidebar( array(
 		'name'          => 'Right Home Page Area',
 		'id'            => 'promo3',
 		'before_widget' => '<div id="promo3" class="col span_4_of_12">',
@@ -88,7 +88,7 @@ function scratch_theme_widgets_init() {
 		'description'	=> 'The third of three columns on the home page above the footer.',
 	) );
 
-    	register_sidebar( array(
+  register_sidebar( array(
 		'name'          => 'Right Header Area',
 		'id'            => 'right_header',
 		'before_widget' => '<address>',
@@ -96,6 +96,16 @@ function scratch_theme_widgets_init() {
 		'before_title'  => '',
 		'after_title'   => '',
 		'description'	=> 'The right side area of the header used for displaying contact information.',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Right Sidebar',
+		'id'            => 'right_sidebar',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+		'description'	=> 'Right sidebar area on all inner pages.',
 	) );
 
 }
