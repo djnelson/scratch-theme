@@ -25,6 +25,11 @@ header {
   min-height: 70px;
 }
 
+header img {
+  padding-top: 24px;
+  width: 515px;
+}
+
 footer {
   background-color: #f80;
 }
@@ -463,6 +468,10 @@ a img.aligncenter {
 
 @media only screen and (max-width: 825px) {
 
+  header img {
+    width: 302px;
+  }
+
   nav ul li a {
     font-size: 0.7em;
   }
@@ -519,6 +528,11 @@ a img.aligncenter {
 
 /*  GO FULL WIDTH BELOW 512 PIXELS */
 @media only screen and (max-width: 512px) {
+
+  header img {
+    padding-top: 16px;
+    width: 280px;
+  }
 
   nav ul li {
     text-align: center;
