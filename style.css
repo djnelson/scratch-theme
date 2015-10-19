@@ -278,14 +278,14 @@ input[type=submit]:hover {
 }
 
 #menuToggle {
-  display: none;
-  color: #fff;
-  margin: 0;
-  padding: 0 0 8px 0;
-  height: 40px;
   background: #000 url("_images/vertical-arrow.png") no-repeat;
   background-position: center 28px;
   background-size: 32px;
+  color: #fff;
+  display: none;
+  height: 40px;
+  margin: 0;
+  padding: 0 0 8px 0;
 }
 
 #hero {
@@ -299,11 +299,11 @@ input[type=submit]:hover {
 }
 
 #hero h2 {
+  font-weight: normal;
   padding-top: 40px;
 }
 
 #hero img {
-  width: 40%;
   padding: 20px 0 70px 0;
 }
 
@@ -322,10 +322,10 @@ input[type=submit]:hover {
 #hero a:hover {
   background-color: #FF8800;
   background-color: rgba(255, 136, 0, 1);
-  color: #333;
   border-color: #333;
   border-radius: 40px;
   box-shadow: #000 2px 2px 4px;
+  color: #333;
   transition: .3s background-color, .3s color, .3s border-color, .3s border-radius, .3s box-shadow;
 }
 
@@ -349,6 +349,7 @@ input[type=submit]:hover {
   border-bottom: #333 solid 2px;
   border-radius: 40px 40px 0 0;
   color: #fff;
+  font-weight: normal;
   margin: 10px 20px;
   padding: 14px;
 }
