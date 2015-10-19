@@ -22,7 +22,6 @@ body {
 header {
   background-color: #0CF;
   color: #fff;
-  min-height: 70px;
 }
 
 header img {
@@ -305,6 +304,7 @@ input[type=submit]:hover {
 
 #hero img {
   padding: 20px 0 70px 0;
+  width: 40%;
 }
 
 #hero a {
